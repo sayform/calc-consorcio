@@ -1,20 +1,24 @@
 <template>
   <main>
-      <template v-for="(card, i) in cards">
+      <!-- <template v-for="(card, i) in cards">
           <Card :key="card.id" :dataCard="cards[i]"/>
-      </template>
+      </template> -->
+      <Card :dataCard="cards[0]"></Card>
       <Footer />
+      <FormInitial />
   </main>
 </template>
 
 <script>
 import Card from './Card.vue'
+import FormInitial from './FormInitial.vue'
 import Footer from './Footer.vue'
 
 export default {
     components: {
         Card,
-        Footer
+        Footer,
+        FormInitial
     },
     data() {
         return {
