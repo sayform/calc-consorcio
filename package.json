@@ -38,5 +38,21 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayform/calc-consorcio.git"
+  },
+  "keywords": [
+    "calculadora",
+    "consorcio"
+  ],
+  "author": "Sammy Formighieri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sayform/calc-consorcio/issues"
+  },
+  "homepage": "https://github.com/sayform/calc-consorcio#readme"
 }
