@@ -1,6 +1,6 @@
 <template>
   <footer>
-      <p>Construído com VueJS. {{ Date.now() }}</p>
+      <p>Construído com VueJS. {{ Date.now() }}. Sammy</p>
   </footer>
 </template>
 
