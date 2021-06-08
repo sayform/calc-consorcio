@@ -1,24 +1,21 @@
 <template>
   <main>
-      <!-- <template v-for="(card, i) in cards">
-          <Card :key="card.id" :dataCard="cards[i]"/>
-      </template> -->
-      <Card :dataCard="cards[0]"></Card>
-      <Footer />
-      <FormInitial />
+      <CardInitial />
+      <CardWager />
+      <CardResult />
   </main>
 </template>
 
 <script>
-import Card from './Card.vue'
-import FormInitial from './FormInitial.vue'
-import Footer from './Footer.vue'
+import CardInitial from './CardInitial.vue'
+import CardWager from './CardWager.vue'
+import CardResult from './CardResult.vue'
 
 export default {
     components: {
-        Card,
-        Footer,
-        FormInitial
+        CardInitial,
+        CardResult,
+        CardWager,
     },
     data() {
         return {
@@ -49,6 +46,37 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+ main {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5em;
+
+    .card {
+        background-color: lightgray;
+        padding: 1em;
+
+        form {
+            input, label {
+                display: block;
+            }
+            label {
+                font-size: 1em;
+                font-weight: lighter;
+                margin-top: 0.3em;
+            }
+            input {
+                background-color: lightgray;
+                width: 100%;
+                font-size: 3em;
+                border: 0;
+                outline: 0;
+                border-bottom: 1px solid #000;
+                margin-top: 0.5em;
+            }
+        }
+
+    }
+ }
 
 </style>
